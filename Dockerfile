@@ -1,9 +1,20 @@
 FROM osrf/ros:noetic-desktop-full
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update \
     && apt-get install -y \
     nano \
     vim \
+    ros-noetic-roserial-arduino\
+    ros-noetic-moveit\
+    ros-noetic-gmapping\
+    ros-noetic-navigation\
+    ros-noetic-ros-controllers\
+    ros-noetic-gazebo-ros-control\
+    ros-noetic-roboticsgroup-upatras-gazebo-plugins\
+    ros-noetic-roserial\
+    python3-pip\
     && rm -rf /var/lib/apt/lists/*
 
 ARG USERNAME=ros1
