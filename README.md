@@ -2,13 +2,6 @@
 
 Guide for setting up a docker container for ros1.
 
-
-## Acknowledgements
-
- - [Articulated Robotics](https://github.com/joshnewans/dockerfile_example)
-
-
-
 ## Installation
 
 ```bash
